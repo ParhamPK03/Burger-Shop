@@ -10,7 +10,7 @@ const Delivery = () => {
     <div className="pt-[8rem] pb-[3rem]">
       <div className="w-[80%] mx-auto grid grid-cols-1 items-center lg:grid-cols-2 gap-[3rem]">
         {/* Image */}
-        <div>
+        <div data-aos="fade-right" data-aos-anchor-placement="top-center">
           <Image src={DeliveryImg} alt="delivery" />
         </div>
         {/* Text Content */}
@@ -34,7 +34,7 @@ const Delivery = () => {
           <div className="flex items-center space-x-3 mt-[1rem]">
             <IoFastFood className="text-red-600 w-[2rem] h-[2rem]" />
             <h1 className="text-[18px] text-black font-medium">
-               Free shipping from 75$
+              Free shipping from 75$
             </h1>
           </div>
           <div className="flex items-center space-x-3 mt-[1rem]">
