@@ -14,27 +14,59 @@ const Nav = ({ openNav }: Props) => {
       <div className="sm:w-[90%] w-[95%] mx-auto flex h-[100%] items-center justify-between">
         {/* Log */}
         <div className="flex items-center space-x-2">
-          <FaBurger className="w-[1.2rem] h-[1.2rem] sm:w-[1.4rem] sm:h-[1.4rem] text-orange-500" />
-          <h1 className="text-[20px] sm:text-[30px] font-semibold">
+          <FaBurger className="w-[1.2rem] h-[1.2rem] sm:w-[1.4rem] sm:h-[1.4rem] text-orange-500 cursor-pointer" />
+          <h1 className="text-[20px] sm:text-[30px] font-semibold cursor-pointer">
             BurgerBite
           </h1>
         </div>
         {/* Nav Links */}
         <ul className="hidden lg:flex items-center space-x-10">
-          <li className="text-[20px] font-medium hover:text-red-600">
+          <li className="text-[20px] font-medium hover:text-red-600 cursor-pointer">
             <Link href="/">Home</Link>
           </li>
-          <li className="text-[20px] font-medium hover:text-red-600">
-            <Link href="/">Shop</Link>
+          <li
+            className="text-[20px] font-medium hover:text-red-600 cursor-pointer"
+            onClick={() => {
+              const target = document.getElementById("Shop");
+              if (target) {
+                target.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
+            Shop
           </li>
-          <li className="text-[20px] font-medium hover:text-red-600">
-            <Link href="/">Menu</Link>
+          <li
+            className="text-[20px] font-medium hover:text-red-600 cursor-pointer"
+            onClick={() => {
+              const target = document.getElementById("PopularBurger");
+              if (target) {
+                target.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
+            Menu
           </li>
-          <li className="text-[20px] font-medium hover:text-red-600">
-            <Link href="/">Blog</Link>
+          <li
+            className="text-[20px] font-medium hover:text-red-600 cursor-pointer"
+            onClick={() => {
+              const target = document.getElementById("Delivery");
+              if (target) {
+                target.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
+            Blog
           </li>
-          <li className="text-[20px] font-medium hover:text-red-600">
-            <Link href="/">Contact</Link>
+          <li
+            className="text-[20px] font-medium hover:text-red-600 cursor-pointer"
+            onClick={() => {
+              const target = document.getElementById("Contact");
+              if (target) {
+                target.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
+            Contact
           </li>
         </ul>
         {/* Buttons */}

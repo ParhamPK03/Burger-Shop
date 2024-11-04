@@ -7,7 +7,7 @@ import { BsDoorOpen } from "react-icons/bs";
 
 const Delivery = () => {
   return (
-    <div className="pt-[8rem] pb-[3rem]">
+    <div className="pt-[8rem] pb-[3rem]" id="Delivery">
       <div className="w-[80%] mx-auto grid grid-cols-1 items-center lg:grid-cols-2 gap-[3rem]">
         {/* Image */}
         <div data-aos="fade-right" data-aos-anchor-placement="top-center">

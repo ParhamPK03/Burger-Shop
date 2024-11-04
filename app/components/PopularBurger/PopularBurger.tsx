@@ -27,7 +27,7 @@ const responsive = {
 
 const PopularBurger = () => {
   return (
-    <div className="pt-[3rem] pb-[3rem]">
+    <div className="pt-[3rem] pb-[3rem]" id="PopularBurger">
       <h1 className="heading">
         Our Popular <span className="text-red-600"> Burgers</span>
       </h1>

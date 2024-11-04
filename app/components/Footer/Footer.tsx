@@ -3,7 +3,7 @@ import { FaBurger, FaFacebook, FaInstagram, FaTwitch, FaTwitter } from "react-ic
 
 const Footer = () => {
   return (
-    <div className="pt-[5rem] pb-[3rem] bg-gray-900">
+    <div className="pt-[5rem] pb-[3rem] bg-gray-900" id="Contact">
       <div className="w-[80%] pb-[2rem] border-b-[2px] border-b-gray-300 border-opacity-50 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[3rem] items-center">
         {/* Firs Part */}
         <div>
