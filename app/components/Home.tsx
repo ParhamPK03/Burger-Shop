@@ -8,7 +8,7 @@ import Team from "./Team/Team";
 import Reservation from "./Reservation/Reservation";
 import Newsletter from "./Newsletter/Newsletter";
 import Footer from "./Footer/Footer";
-import AOS, { init } from "aos";
+import AOS  from "aos";
 import "aos/dist/aos.css";
 
 const Home = () => {
